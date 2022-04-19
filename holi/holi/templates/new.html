@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>new</title>
+
+
+ <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bad+Script&display=swap');
+        body{
+            background-color: black;
+            font-family: 'Bad script',cursive;
+
+        }
+        h1{
+            color:white;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+            font-size: 80px;
+            font-weight: 900;
+        }
+        h1 span{
+            display: table-cell;
+            margin:0;
+            padding: o;
+
+            animation:animate 3s linear infinite;
+        }
+        h1 span:nth-child(1){
+            animation-delay: 0s;
+        }
+        h1 span:nth-child(2){
+            animation-delay: 0.5s;
+        }
+        h1 span:nth-child(3){
+            animation-delay: 1s;
+        }
+        h1 span:nth-child(4){
+            animation-delay: 1.5s;
+        }
+        h1 span:nth-child(5){
+            animation-delay: 2s;
+        }
+        h1 span:nth-child(6){
+            animation-delay: 2.5s;
+        }
+        h1 span:nth-child(7){
+            animation-delay:3s;
+        }
+        h1 span:nth-child(8){
+            animation-delay: 3.5s;
+        }
+        h1 span:nth-child(9){
+            animation-delay: 4s;
+        }
+
+        @keyframes animate{
+            0%,100% {
+                color:#fff;
+               filter:blur(2px);
+               text-shadow:0 0 10px #00b3ff,
+                           0 0 20px #00b3ff,
+                           0 0 40px #00b3ff,
+                           0 0 80px #00b3ff,
+                           0 0 120px #00b3ff,
+                           0 0 200px #00b3ff,
+                           0 0 30px #00b3ff,
+                           0 0 400px #00b3ff;
+            }
+            5%,95%{
+                color:red;
+               filter:blur(0px);
+               text-shadow:0 0 10px none;
+            }
+        }
+        p{
+            color:yellow;
+            font-size:4rem;
+            text-align: center;
+        }
+        p{
+            font-size:40px;
+            color:green;
+            text-align: center;
+            animation : type 5s steps(200);
+            overflow: hidden;
+            white-space: nowrap;
+
+
+        }
+        @keyframes type{
+            0%{
+                width:0ch;
+                color:white;
+            }
+
+            100%{
+                width:200ch;
+                color:red;
+            }
+        }
+          .box{
+          margin:10px;
+          padding-bottom:5px;
+            height:30px;
+            width:100px;
+            border-radius: 5%;
+            background:red;
+            animation:rolled 10s infinite;
+            position: relative;
+        }
+        @keyframes rolled{
+            0%{
+                top:0;
+                left:0;
+            }
+            25%{
+                top:0;
+                left:1100px;
+                background:yellow;
+            }
+            50%{
+                top:1000px;
+                left:1100px;
+                background:green;
+            }
+            75%{
+                top:1000px;
+                left:0;
+                background:blue;
+            }
+           100%{
+                top:0;
+                left:0;
+            }
+        }
+        .mainp{
+        opacity:1;
+        color:yellow;}
+        .box2{
+        display:flex;
+        flex-direction:column;}
+        @media (max-width:500px){
+        .box2 .mainp{
+        opacity:1;
+        }
+        .box2{
+        flex-direction:column;}
+        }
+    </style>
+</head>
+<body>
+ <div class="box"><h2>Happy holi</h2></div>
+    <h1>
+        <span>H</span>
+        <span>a</span>
+        <span>p</span>
+        <span>p</span>
+        <span>y</span>
+        <span>H </span>
+        <span>o</span>
+        <span>l</span>
+        <span>i</span>
+
+    </h1>
+
+    <h1>
+
+        <span>{{analyzed_text}} ji</span>
+
+
+
+
+    </h1>
+  <div class="box2" ><p class="mainp">Holi is the festival of love and togetherness.<br>Enjoy the day to the fullest.<br> Wishing you a Happy Holi.</p>
+      <p>Regards<br> Raju kumar</p></div>
+
+ </body>
+</html>
